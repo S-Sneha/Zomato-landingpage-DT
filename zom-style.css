@@ -1,1 +1,138 @@
 /* Zomato landing page clone css file*/
+/* hero__section */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+.hero__section{
+    color:white;
+    background-image: url(./images/heroSectionBackground.png);
+    min-height: 60vh;
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    height: 60px;
+    padding: 15px 45px;
+}
+
+.navbar a{
+    color:white;
+    text-decoration: none;
+}
+.navbar__menu_container{
+    display:flex;
+    gap:20px;
+}
+.navbar__menu_container .user__icon{
+   height:30px;
+   width: 30px;
+   border-radius: 100%;
+   color:rgb(239,79,95);
+   border:1px solid white;
+   align-items:center;
+   justify-content: center;
+   display:none;
+}
+
+.hero__section_container{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    height: calc(60vh,60px);  /* height calculation*/
+    gap: 32px; 
+}
+               
+
+.hero__section_logo{
+    width: 200px;
+}
+
+.hero__section_title{
+    text-align: center;
+    font-size: 25px;
+    font-weight:400;
+}
+
+.hero__section_input_container{
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    gap:10px;
+    border-radius: 10px; 
+    width: 50%
+}
+
+.input_container_location, .input_container_search{
+    padding: 6px;
+    border: none;
+    outline: none;
+    border-radius: 0px;
+    width:96%;
+}
+.hero__section_input_container .location__icon{
+    text-decoration: none;
+    cursor:auto;
+    color: rgb(239,79,95);
+}
+.hero__section_input_container .search__icon{
+    text-decoration: none;
+    cursor:auto;
+    color: gray;
+}
+
+.input_container_location{
+    width: 35%;
+    border-right: 2px solid lightgray;
+}
+
+.input_container_search{
+    width: 65%;
+}
+
+
+/* Media Query for this hero section */
+@media only screen and (max-width:500px){
+    .link{
+        display:none;
+    }
+    .navbar__menu_container .user__icon{
+         display: flex;
+    }
+    .hero__section{
+        min-height: 80vh;
+    }
+    .navbar{
+        padding: 15px;
+    }
+
+    .hero__section_input_container{
+        flex-direction: column;
+        background-color: transparent;
+        width: 100%;
+    }
+    .input_container_location, .input_container_search{
+        padding: 15px;
+        flex-direction: column;
+        border-radius: 10px;
+        width: 95%;
+    }
+    .hero__section_input_container{
+        height: calc(80vh - 60px);
+    }
+    .hero__section_title{
+        font-size: 20px;
+        width: 95%;
+    }
+    .location__icon, .search__icon{
+        display: flex;
+    }
+}
