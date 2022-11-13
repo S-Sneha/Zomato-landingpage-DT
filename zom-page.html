@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- zomato logo in the tab -->
-    <link rel="icon" type="image/x-icon"
-        href="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Zomato_logo.png/220px-Zomato_logo.png" />
+    <link rel="icon" 
+          type="image/x-icon"
+          href="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Zomato_logo.png/220px-Zomato_logo.png" />
+    
     <!-- font awesome icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" 
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+          integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+          crossorigin="anonymous" 
+          referrerpolicy="no-referrer" />
+          
     <!-- poppins font by google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -30,14 +34,15 @@
     <section class="hero__section">
         <header>
             <nav class="navbar">
-              <a href="#">Get The App</a>
+              <a href="#" class="navbar_left">Get The App</a>
+              <a href="#" class="navbar_ham"><i class="fa-sharp fa-solid fa-bars"></i></a>
               <div class="navbar__menu_container">
-                <a href="#" class="link">Inventor Relations</a>
-                <a href="#" class="link">Add Resutrant</a>
-                <a href="#" class="link">Login</a>
-                <a href="#" class="link">Sign Up</a>
+                <a href="#" class="link">Investor Relations</a>
+                <a href="#" class="link">Add restaurant</a>
+                <a href="#" class="link">Log in</a>
+                <a href="#" class="link">Sign up</a>
                 <a href="#" class="user__icon">
-                  <i class="fa-solid fa-user"></i>
+                  <i class="fa-solid fa-user"> </i>
                 </a>
               </div>
             </nav>
@@ -46,19 +51,85 @@
      <!-- Hero section container-->  
      <div class="hero__section_container">
         <img class="hero__section_logo" src="./images/heroSectionLogo.png" alt="Its the Zomato logo"/>
-        <h1> Discover the best food and drinks in Kochi</h1>
+        <h1 class="hero_section_title"> Discover the best food and drinks in Kochi</h1>
         <div class="hero__section_input_container">
-          <a href="#" class="location__icon">
-          <i class="fa-solid fa-location-dot fa-lg"></i>
-          </a>
-          <input type="text" class="input_container_location" placeholder="Kochi"/>
-          <a href="#" class="search__icon">
-          <i class="fa-solid fa-magnifying-glass fa-lg"></i>
-          </a>
-            <input type="text" class="input_container_search" placeholder="Search for restaurant, cuisine or a dish"/>
-        </div>
-    </div>   
-    </section>
+            <div class="location">
+                <a href="#">
+                <i class="fa-solid fa-location-dot fa-lg"></i>
+               </a>
+               <input type="text" class="input_container_location" placeholder="Kochi"/>
+           </div>
+           <div class="search">
+               <a href="#">
+               <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+               </a>
+               <input type="text" class="input_container_search" placeholder="Search for restaurant, cuisine or dish"/>
+           </div>
+       </div>
+   </div>   
+   </section>
+
+
+<!-- "Popular localities in and around" section-->
+<section class="locality__container">
+ <h1>Popular localities in and around <span class="place_K">Kochi</span></h1>
+ <div class="locality__sub_container">
+  <div class="sub_container_1">
+    <span class="first_division">
+      <h4> <a href="#">Kakkanad </a> </h4>   
+      <p> <a href="#">350 places </a></p>
+    </span>
+    <span class="first_division">
+      <h4> <a href="#">Panampilly Nagar</a></h4> 
+      <p> <a href="#">80 places </a></p>
+    </span>
+    <span class="first_division">
+      <h4> <a href="#">Palarivattom </a></h4> 
+      <p> <a href="#">132 places </a> </p> 
+    </span>
+  </div>
+
+  <div class="sub_container_2">
+    <span class="second_division">
+      <h4> <a href="#">Edappally </a></h4>
+      <p> <a href="#">258 places </a></p>
+    </span>
+    <span class="second_division">
+      <h4> <a href="#">MG Road</a></h4>
+      <p> <a href="#">86 places </a></p>
+    </span>
+    <span class="second_division">
+      <h4> <a href="#">Vyttila </a></h4>
+      <p> <a href="#">111 places </a></p>
+    </span>
+  </div>
+
+  <div class="sub_container_3">
+    <span class="third_division">
+      <h4> <a href="#">Fort Kochi </a></h4>
+      <p> <a href="#">84 places </a></p>
+    </span>
+    <span class="third_division">
+      <h4> <a href="#">Kacheripady</a></h4>
+      <p> <a href="#">87 places </a></p>
+    </span>
+    <span class="third_division">
+      <h4> <a href="#">see more </a></h4> 
+    </span>
+  </div>
+
+</div>
+</section>
+
+<section class="container explore">
+  <h1> Explore options near me </h1>
+ <div class="options__container">
+   <span> <h3> <a href="#">Popular cuisines near me  </a> </h3> </span>
+   <span> <h3> <a href="#">Popular restaurant types near me </a> </h3> </span>
+   <span> <h3> <a href="#">Top Restaurant Chains </a> </h3></span>
+   <span> <h3> <a href="#">Cities We Deliver To </a> </h3></span>
+  </div>
+</section>
 
 </body>
 
