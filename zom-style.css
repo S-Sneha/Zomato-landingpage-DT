@@ -399,6 +399,54 @@
     width:35%;
 }
 
+/* container explore */
+.explore{
+    width:95%;
+    height:80%;
+    display:flex;
+    gap:1.5rem;
+    margin-top: 4rem;
+    margin-left:9%;
+    flex-wrap: wrap;
+}
+.explore .options__container{
+    display:grid;
+    grid-template-columns: repeat(1,1fr);
+    width:100%;
+    gap: 1rem;
+    margin-bottom: 10px;
+}
+.options__container span{
+    margin-top:0.2rem;
+    width:95%;
+    color: gray;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border:0.5px solid lightgray;
+    box-shadow: 0 0 1px rgba(0,0,0,0.2);
+    margin-bottom: 5px;
+    cursor:pointer;
+    padding: 18px 12px;
+}
+
+.explore h1{
+    font-size:2rem;
+    font-weight: 450;
+    padding-top: 10px;
+}
+.options__container a{
+    text-decoration: none;
+    color:rgb(59, 59, 59);
+}
+
+.options__container h3{
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+}
+
 /*MEDIA QUERY*/
 
 /* Media Query for hero-section */
