@@ -307,10 +307,10 @@
 /* get__the_app */
 
 .get__the_app{
-    margin-top:4rem;
-    width:100%;
-    background-color:rgb(255,251,247);
+    width: 100%;
     padding:3rem 6rem;
+    background-color:rgb(255,251,247);
+    margin-top:4rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -539,7 +539,7 @@
     padding: 0.4rem;
 }
 
-/*MEDIA QUERY*/
+/*MEDIA QUERY FOR THE ZOMATO LANDING PAGE */
 
 /* Media Query for hero-section */
 @media only screen and (max-width:500px){
